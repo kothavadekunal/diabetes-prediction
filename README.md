@@ -1,1 +1,1 @@
-# Diabetes Prediction along with model deployment 
+# Diamonds Price Prediction along with model deployment 
