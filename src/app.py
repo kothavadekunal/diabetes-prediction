@@ -16,14 +16,8 @@ def home_page():
 
 @app.route('/predict',methods = ['POST'])
 def prediction():
-    # carat = request.form.get("carat")
-    # depth = request.form.get("depth")
-    # table = request.form.get("table")
-    # x = request.form.get("x")
-    # y = request.form.get("y")
-    # z = request.form.get("z")
-    int_features = [float(x) for x in request.form.values()]
-    final_features = [np.array(int_features)]
+    features = [float(x) for x in request.form.values()]
+    final_features = [np.array(features)]
     prediction = model.predict(final_features)
     result = np.round(prediction[0],2)
     return render_template('index.html', prediction_text = 'Predicted Price = $ {}'.format(result))
