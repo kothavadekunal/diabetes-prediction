@@ -15,7 +15,7 @@ def get_requirements(file_path:str)-> List[str]:
             requirements.remove(HYPHEN_E_DOT)
 
 setup(
-name = 'diabetes-project',
+name = 'diamonds-project',
 version = '0.0.1',
 author = 'Kunal Kothavade',
 author_email = 'kothavadekunal@gmail.com',
