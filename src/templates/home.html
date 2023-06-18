@@ -1,0 +1,20 @@
+<home>
+    <body>
+        <h1 style="background-color:DodgerBlue;">Diamond Price Prediction</h1>
+        <img src="static/diamond.jpg" alt="Artificial Intelligence" width="1100" height="200">
+        <br>
+        <br>
+        <form method = 'POST' action = '/predict'>
+            <input type = 'number' step = 'any' name = 'carat' placeholder = 'carat' required = "required" /><br>
+            <input type = 'number' step = 'any' name = 'depth' placeholder = 'depth' required = "required" /><br>
+            <input type = 'number' step = 'any' name = 'table' placeholder = 'table' required = "required" /><br>
+            <input type = 'number' step = 'any' name = 'x' placeholder = 'x' required = "required" /><br>
+            <input type = 'number' step = 'any' name = 'y' placeholder = 'y' required = "required" /><br>
+            <input type = 'number' step = 'any' name = 'z' placeholder = 'z' required = "required" /><br>
+            <button>Predict</button>
+        </form>
+        <br>
+        <br>
+        <b>{{prediction_text}}</b>
+    </body>
+</home>
