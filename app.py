@@ -7,7 +7,7 @@ import pickle
 app = Flask(__name__)
 
 # Loading the model
-model = pickle.load(open('linear_regressor.pkl','rb'))
+model = pickle.load(open('src/linear_regressor.pkl','rb'))
 
 @app.route('/')
 def home_page():
