@@ -15,7 +15,7 @@ body {
 /* Style the header */
 header {
   background-color: #666;
-  padding: 30px;
+  padding: 10px;
   text-align: center;
   font-size: 35px;
   color: white;
@@ -30,15 +30,9 @@ nav {
   padding: 50px;
 }
 
-/* Style the list inside the menu */
-nav ul {
-  list-style-type: none;
-  padding: 0;
-}
-
 article {
   float: left;
-  padding: 0px;
+  padding: 150px;
   width: 70%;
   font-size: 35px;
   background-color: #f1f1f1;
@@ -50,14 +44,6 @@ section::after {
   content: "";
   display: table;
   clear: both;
-}
-
-/* Style the footer */
-footer {
-  background-color: #777;
-  padding: 10px;
-  text-align: center;
-  color: white;
 }
 
 /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
@@ -72,7 +58,8 @@ footer {
 <body>
 
 <header>
-  <h2>Diamond Price Prediction</h2>
+  <h2><img src="static/diamond.png" alt="Artificial Intelligence" width="200" height="200">Diamond Price Prediction</h2>
+  
 </header>
 
 <section>
@@ -88,7 +75,6 @@ footer {
     </form>
   </nav>
   <article>
-    <img src="static/diamond.jpg" alt="Artificial Intelligence" width="200" height="200">
     <b>{{prediction_text}}</b>
   </article>
 </section>
