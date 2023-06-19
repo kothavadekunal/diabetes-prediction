@@ -22,4 +22,4 @@ def prediction():
     result = np.round(prediction[0],2)
     return render_template('index.html', prediction_text = 'Predicted Price = $ {}'.format(result))
 
-app.run(debug = True)
+app.run(host="0.0.0.0")
